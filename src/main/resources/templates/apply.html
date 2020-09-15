@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>apply for a job | Zeal</title>
+</head>
+<style>
+body
+{
+  background: grey;
+}
+h1
+{
+   text-align: center;
+}
+</style>
+<body>
+<h1>Application Form</h1>
+<form action="/index" id="" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.First_Name.value == "") { alert('First name is required.'); frm.First_Name.focus(); return false; }
+if (frm.Last_Name.value == "") { alert('Last name is required.'); frm.Last_Name.focus(); return false; }
+if (frm.Email_Address.value == "") { alert('Email address is required.'); frm.Email_Address.focus(); return false; }
+if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.Email_Address.focus(); return false; }
+if (frm.Position.value == "") { alert('Position is required.'); frm.Position.focus(); return false; }
+if (frm.Phone.value == "") { alert('Phone is required.'); frm.Phone.focus(); return false; }
+return true; }
+</script>
+<table border="0" cellpadding="5" cellspacing="0">
+<tr> <td style="width: 50%">
+<label for="First_Name"><b>First name *</b></label><br />
+<input name="First_Name" type="text" maxlength="50" style="max-width: 260px" />
+</td> <td style="width: 50%">
+</td> </tr> <tr> <td colspan="2">
+<label for="Last_Name"><b>Last name *</b></label><br />
+<input name="Last_Name" type="text" maxlength="50" style="max-width: 260px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="title">Title:</label>
+<select id="title" name="title">
+  <option value="volvo">Mr</option>
+  <option value="saab">Mrs</option>
+  <option value="fiat">Miss</option>
+</select>
+</td> </tr> <tr> <td colspan="2">
+<label for="gender"><b>Gender</b></label><br />
+<input name="gender" type="radio" value="Male" checked="checked" /> Male     
+<input name="gender" type="radio" value="Female" /> Female      
+<input name="gender" type="radio" value="Other" /> Other
+</td> </tr> <tr> <td colspan="2">
+<label for="Date"><b>Date of Birth</b></label><br />
+<input name="Date" type="date" maxlength="100" style="max-width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Email_Address"><b>Email *</b></label><br />
+<input name="Email_Address" type="text" maxlength="100" style="max-width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Address"><b>Address</b></label><br />
+<input name="Address" type="text" maxlength="255" value="" style="max-width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="City"><b>City</b></label><br />
+<input name="City" type="text" maxlength="50" style="max-width: 260px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Position"><b>Position you are applying for *</b></label><br />
+<input name="Position" type="text" maxlength="100" style="max-width: 535px" />
+</td> </tr> <tr> <td>
+<label for="Salary"><b>Salary requirements</b></label><br /> <input name="Salary" type="text" maxlength="50" style="max-width: 260px" /> </td> <td>
+</td> </tr> <tr> <td colspan="2">
+<label for="StartDate"><b>When can you start?</b></label><br />
+<input name="StartDate" type="text" maxlength="50" style="max-width: 260px" />
+</td> </tr> <tr> <td>
+<label for="Phone"><b>Phone *</b></label><br />
+<input name="Phone" type="text" maxlength="50" style="max-width: 260px" />
+</td> <td>
+<label for="Reference"><b>Upload CV</b></label><br />
+<input type="file">
+</td> </tr> <tr> <td colspan="2">
+<label for="Relocate"><b>Are you willing to relocate?</b></label><br />
+<input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes      
+<input name="Relocate" type="radio" value="No" /> No      
+<input name="Relocate" type="radio" value="NotSure" /> Not sure
+</td> </tr> <tr> <td colspan="2">
+<label for="Reference"><b>Application letter</b></label><br />
+<textarea name="Reference" rows="7" cols="40" style="max-width: 535px"></textarea>
+</td> </tr> <tr> <td colspan="2" style="text-align: center;">
+<script src="http://www.gmail.com" type="text/javascript"></script>
+<input name="skip_submit" type="submit" value="Send Application" /><br>
+<a href="http://www.gmail.com" id="lnk100" title="form to email">Apply through email</a>
+</td> </tr>
+</table>
+</form>      
+</body>
+</html>

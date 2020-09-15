@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>welcome</title>
+</head>
+<style>
+body
+{
+background: black;
+background-attachment: scroll;
+background-repeat: no-repeat;
+}
+h6
+{
+    font-size: 66px;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+h1
+{
+ color: orange;
+}
+h3
+{
+ color: white;
+}
+h2
+{
+ color: white;
+ text-align: center;
+}
+h4 a
+{
+  text-decoration: none;
+  color: orange;
+  padding: 10px;
+}
+h4
+{
+  text-indent: 800px; 
+}
+h4 a:hover
+{
+  color: blue;
+}
+z a
+{
+ color: orange;
+ text-decoration: none;
+}
+z a:hover
+{
+ color: blue;
+ text-decoration: none;
+}
+*
+{
+ margin: 0;
+ padding: 0;
+}
+.background-wrap
+{
+ position: absolute;
+ z-index: -1000;
+ overflow: hidden;
+}
+l a:hover
+{
+  color: blue;
+}
+
+l a
+{
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: orange;
+    min-width: 100px;
+    display: inline-block;
+    padding: 12px 15px;
+    padding: 1.2rem 3rem;
+    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: 150ms linear background;
+    -o-transition: 150ms linear background;
+    transition: 150ms linear background;
+    text-transform: uppercase;
+    border: 4px solid #d4181f;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    background-image: linear-gradient(45deg, #d4181f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    text-align: center;
+    transition: background 300ms ease-in-out;
+}
+</style>
+<header>
+<h4>
+<a th:href="@{/home}">Home</a>
+<a th:href="@{/trane}">Railway trans</a>
+<a th:href="@{/trucks}">Road trans</a>
+<a th:href="@{/pilot}">Air trans</a>
+<a th:href="@{/boat}">Sea trans</a>
+</h4>
+<h1><marquee>ZEAL Transport n Logistic</marquee></h1>
+</header>
+<body>
+<div class="background-wrap">
+<video playsinline autoplay loop muted style="opacity: 1; width: auto; height: 752px;"><source src="zeal.mp4" type="video/mp4"></video>
+</div><br></br><br></br><br><br></br><br></br>
+<div class="content">
+<h6>To all your transportation<br>
+<strong>Problems</strong></h6>
+<br><br>
+<l>
+<a class="button video-button ryv-popup" th:href="@{/aboutus}">About Us</a>
+</l>
+</div>
+</body>
+<footer>
+<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br><br>
+<h3>
+CONTACT US
+</h3>
+<z>
+<a href="https://www.facebook.com" target="blank" title="facebook">Facebook</a><br>
+<a href="http://www.gmail.com" target="blank" title="gmail">Gmail</a><br>
+<a href="http://www.whatsapp.com" target="blank" title="whatsapp">Whatsapp</a><br>
+<a href="http://www.youtube.com" target="blank" title="our videos">Youtube</a>
+</z>
+<h3>
+VIDEOS
+</h3>
+<video controls width="500" height="300" title="our trucks">
+  <source src="video.mp4"/>
+</video>
+
+<br></br>
+<h2>&#169;  Zeal 2020
+</h2>
+</footer>
+</html>

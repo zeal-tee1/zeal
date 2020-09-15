@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>home | Zeal</title>
+</head>
+<style>
+body
+{
+background: black;
+}
+h3
+{
+  text-align: center;
+}
+h1
+{
+  text-align: center;
+  color: white;
+}
+h3 a
+{
+  color: orange;
+  text-decoration: none;
+}
+h3 a:hover
+{
+  color: blue;
+  text-decoration: none;
+}
+</style>
+<header>
+<h3>
+<marquee><a th:href="@{/apply}">Click me to work for us</a></marquee>
+</h3>
+</header>
+<body>
+<h3>
+<a th:href="@{/trane}">Book Railway</a>
+</h3>
+<video controls width="1300" height="500" autoplay title="Railway Travel">
+  <source src="railway.mp4"/>
+</video>
+<h3>
+<a th:href="@{/trucks}">Book Road</a>
+</h3>
+<video controls width="1300" height="500" title="Road Travel">
+  <source src="road.mp4"/>
+</video>
+<h3>
+<a th:href="@{/pilot}">Book Air</a>
+</h3>
+<video controls width="1300" height="500" title="Air Travel">
+  <source src="pilot.mp4"/>
+</video>
+<h3>
+<a th:href="@{/boat}">Book Sea</a>
+</h3>
+<video controls width="1300" height="500" title="Sea Travel">
+  <source src="boat.mp4"/>
+</video>
+</body>
+</html>

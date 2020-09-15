@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>About Us | Zeal</title>
+</head>
+<style>
+@keyframes myMove
+{
+   0% {left: 400px;} 
+   50% {left: 600px;}
+   100% {left: 400px;}
+} 
+@-webkit-keyframes myMove
+{
+   0% {left: 400px;} 
+   50% {left: 600px;}
+   100% {left: 400px;}
+} 
+@-moz-keyframes myMove
+{
+   0% {left: 400px;} 
+   50% {left: 600px;}
+   100% {left: 400px;}
+} 
+h1
+{
+  position: relative;
+  animation: myMove 3s infinite;
+  -webkit-animation: myMove 3s infinite;
+  -moz-animation: myMove 3s infinite;
+}
+body
+{ 
+  background: black;
+}
+h1
+{
+  color: orange;
+}
+g h2
+{
+  text-align: center;
+  color: orange;
+}
+h2
+{
+  text-align: center;
+  color: orange;
+}
+h2 a
+{ 
+text-decoration: underline;
+  color: blue;
+}
+h2 a:hover
+{
+  color: orange;
+  text-decoration: none;
+}
+g h4
+{
+  text-align: center;
+  color: orange;
+}
+h4
+{
+  color: orange;
+}
+
+</style>
+<header>
+<h1>
+About Zeal Transport & Logistics
+</h1>
+</header>
+
+<body>
+<h2><article>We ignite opportunity by setting the world </article>
+<article>in motion</article></h2>
+<h4><article>Good things happen when people can move, whether across town or toward their dreams.</article>
+<article>Opportunities appear, open up, become reality. What started as a way to tap a button to get </article> 
+<article>a ride has led to billions of moments of human connection as people around the world go all kinds </article>
+<article>of places in all kinds of ways with the help of our technology.</article></h4>
+<g>
+<h2>Rides and beyond</h2>
+<h4>
+<article>In addition to giving riders</article>
+<article>a way to get from point A to point B,</article>
+<article>we're working to bring the future closer</article>
+<article>with self-driving technology and</article>
+<article>urban air transport, helping people</article>
+<article>order food quickly and affordably,</article>
+<article>removing barriers to healthcare, creating</article>
+<article>new freight-booking solutions, and helping</article>
+<article>companies provide a seamless employee travel experience.</article>
+</h4>
+</g>
+</body>
+<footer>
+ <h2><a th:href="@{/video}">how to use our app</a></h2>
+</footer>
+</html>
